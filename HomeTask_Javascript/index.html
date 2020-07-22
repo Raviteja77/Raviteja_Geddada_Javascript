@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Epam | Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name = "viewport"
+	content = "width = device-width, initial-scale = 1.0">
+</head>
+<body> 
+	<div class="form">
+	<div class = "logo"><div class = "posi"><div class = "cap"><i class="fa fa-graduation-cap"></i></div><b>Sign up</b><div class="close"><i class="fa fa-times"></i></div></div></div>
+	<form name = "RegForm" onsubmit = "return validate()" method = "post">
+		<p>
+			<input type="text" placeholder="username" name = "name" required><i id = "name" class="fa fa-user"></i>
+			<span id = "error" style = "color:red" onclick="emptyFunction()"></span>
+		</p>
+		<p>
+			<input type="email" placeholder="mail@example.com" name = "email" title = "Must have a valid domain name" required><i id = "email" class="fa fa-envelope-o"></i>
+			<span id = "error1" style = "color:red" onclick="emptyFunction()"></span>
+		</p> 
+		<p>
+			<input type="password" placeholder="password" name = "pass" title = "Must Contain atleast one number and one uppercase and one lower case letter, and at least 8 or more characters" required><i id = "pass" class="fa fa-unlock-alt"></i>
+			<span id = "error2" style = "color:red" onclick="emptyFunction()"></span>
+		</p>
+		<p>
+			<input type="password" placeholder="confirm password" name = "pass1" required><i id = "pass1" class="fa fa-unlock-alt"></i>
+			<span id = "error3" style = "color:red" onclick="emptyFunction()"></span>
+		</p>
+		<p>
+			<input type="tel" placeholder="mobile number" name = "phone" required><i id = "phone" class="fa fa-mobile"></i>
+			<span id = "error4" style = "color:red" onclick="emptyFunction()"></span>
+		</p>
+		<div class = "btn1">&nbsp;<button style = "background-color : #58CDCF ";
+		 border-color :#05D2CC ;>SIGN UP</button></div> 
+		<div class = "forget"> 
+		<h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6> 
+		<div class = "btn2"><button style = "background-color : #52638C";>f</button></div> <br>
+		<div class = "btn3"><button style = "background-color : #E62E10;">g</button></div> <br>
+		<div class = "btn4"><button style = "background-color : #9BEC08";>EPAM LOGIN</button></div> <br>
+	</div>
+</body>
+<script src = "validation.js"></script>
+</html>
